@@ -3,11 +3,6 @@ main = "src/worker.ts"
 compatibility_date = "2025-02-01"
 compatibility_flags = ["nodejs_compat"]
 
-[assets]
-directory = "./dist"
-binding = "ASSETS"
-not_found_handling = "single-page-application"
-
 [vars]
 ALLOWED_ORIGINS = "*"
 INSPECT_CACHE_TTL_MS = "86400000"
