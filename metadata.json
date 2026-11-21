@@ -1,0 +1,6 @@
+{
+  "name": "CineMega — Cinema Video Streaming & Multi-Layer Backend",
+  "description": "Production-ready personal cinema video streaming platform for public Mega.nz libraries with distributed API workers, shared Supabase PostgreSQL storage, AES-128-CTR byte-range streaming, and on-demand thumbnail generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

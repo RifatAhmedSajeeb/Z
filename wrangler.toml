@@ -1,0 +1,21 @@
+name = "cinemega-worker"
+main = "src/worker.ts"
+compatibility_date = "2025-02-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[vars]
+ALLOWED_ORIGINS = "*"
+INSPECT_CACHE_TTL_MS = "86400000"
+TICKET_CACHE_TTL_MS = "1800000"
+STREAM_BLOCK_CACHE_LIMIT_MB = "256"
+
+# Configure secrets via Wrangler CLI:
+# npx wrangler secret put SUPABASE_URL
+# npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
+# npx wrangler secret put SESSION_SECRET
+# npx wrangler secret put ADMIN_PASSCODE
